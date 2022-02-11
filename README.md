@@ -14,8 +14,7 @@ For persistent configuration changes using the web ui, the urserver.config file 
 Make sure to copy the provided empty template config (`cp urserver.config.template urserver.config`) before the first use.
 That's it, you can now start the docker container using either the provided bash script or the docker-compose.yaml.
 
-`./run.sh`
-`docker-compose up -d`
+`./run.sh` or `docker-compose up -d`
 
 ### PiInput
 
