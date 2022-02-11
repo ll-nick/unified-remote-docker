@@ -1,0 +1,13 @@
+{
+   "updates" : {
+      "last-check" : 1644591519791038,
+      "pending" : false,
+      "response" : {
+         "Available" : false,
+         "Link" : "https://www.unifiedremote.com/update",
+         "Response" : "Using newer version",
+         "VersionCode" : 39,
+         "VersionName" : "New Version"
+      }
+   }
+}

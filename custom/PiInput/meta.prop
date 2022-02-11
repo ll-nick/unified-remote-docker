@@ -1,0 +1,5 @@
+meta.id: PiInput
+meta.name: PiInput
+meta.author: Unified
+meta.description: Control mouse and keyboard.
+meta.tags.category: input

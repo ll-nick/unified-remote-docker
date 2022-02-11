@@ -1,0 +1,13 @@
+version: '3'
+services:
+  unifiedremote:
+    container_name: unified-remote
+    image: nickll/unifiedremote:raspbian
+    devices:
+      - /dev/uinput
+    restart: unless-stopped
+    stdin_open: true
+    ports:
+      - "9510-9512:9510-9512"
+    volumes:
+      -  /home/pi/unified-remote-docker/urserver.config:/home/ur/.urserver/urserver.config
