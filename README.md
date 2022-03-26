@@ -17,6 +17,14 @@ That's it, you can now start the docker container using either the provided bash
 `./run.sh`
 `docker-compose up -d`
 
+### udev rules not set correctly
+
+For some reason, I had problems with the udev rule not being set correctly which resulted in missing permissions for uinput.
+To fix, I used [this simple solution](https://github.com/chrippa/ds4drv/issues/93#issuecomment-265300511) which thankfully solved the issue after a reboot:
+```
+echo "uinput" | sudo tee /etc/modules-load.d/uinput.conf
+```
+
 ### PiInput
 
 [There seems to be a bug](https://askubuntu.com/questions/1244234/unified-remote-bluetooth-left-and-right-clicks-not-working) with the arm version of unified remote, where the BasicInput remote won't work properly.
